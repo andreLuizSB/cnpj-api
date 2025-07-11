@@ -1,0 +1,49 @@
+Teste Técnico – Desenvolvedor Python
+
+Duração total: 1 hora
+Ferramentas permitidas: VSCode, navegador, internet, ChatGPT
+Requisitos: Conta gratuita no Azure, conta gratuita no CNPJJá (https://cnpja.com/)
+Importante: A tela deverá ser gravada durante toda a execução do teste.
+
+Objetivo do Teste
+-----------------
+Você deverá criar uma API em Python que consulte a razão social de uma empresa a partir de um CNPJ, 
+utilizando a API gratuita do CNPJJá. Após isso, deverá publicar a aplicação em um App Service gratuito 
+do Azure, garantindo o funcionamento do endpoint publicamente.
+
+Etapas
+------
+
+1. Criação da API em Python
+- Utilize o VSCode como ambiente de desenvolvimento.
+- Crie um pequeno projeto Python (utilize Flask ou FastAPI).
+- Implemente um endpoint HTTP (GET ou POST) que receba um número de CNPJ.
+- Esse endpoint deve:
+  - Fazer uma requisição à API gratuita do CNPJá.
+  - Processar a resposta.
+  - Retornar apenas a razão social da empresa consultada no corpo da resposta da sua API, em formato JSON.
+
+Exemplo de resposta esperada:
+{
+  "razao_social": "Empresa Exemplo LTDA"
+}
+
+2. Implantação no Azure
+- Crie uma conta gratuita na Azure, se ainda não tiver.
+- Crie um App Service gratuito (camada F1) para hospedar sua API.
+- Garanta que sua API esteja acessível via internet e funcional ao final do teste.
+
+Regras do Teste
+---------------
+- Duração máxima: 1h e 30min, a partir do início da gravação.
+- Gravação de tela obrigatória: Toda a execução do teste deverá ser gravada.
+- Uso de recursos externos permitido: Você poderá utilizar internet e ferramentas como o ChatGPT para 
+  auxílio durante o teste.
+- Entrega: Ao final, envie:
+  - Link da API hospedada no Azure.
+  - Código-fonte do projeto (pode ser um repositório Git ou arquivo zip).
+  - Gravação da tela durante o teste.
+
+Boa sorte!
+
+Documentação da API do CNPJJá: https://cnpja.com/api/open
